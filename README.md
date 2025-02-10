@@ -11,6 +11,12 @@ This is a real-time multiplayer quiz game backend where two players compete by a
 ### Steps to run:-
 - Clone the repo
 - Run commands:-
+- make an .env file with variables as \
+  MONGO_URI= \
+  PORT= \
+  DB_NAME= \
+  JWT_SECRET=
+
  ```
   npm install
   npm start
