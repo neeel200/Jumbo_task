@@ -1,61 +1,18 @@
-# Advance Url Shortner
+# Real-Time Quiz Game Backend
+### Overview
+This is a real-time multiplayer quiz game backend where two players compete by answering four questions independently. The player with the highest score at the end wins the game. The backend supports user authentication, real-time question delivery, answer validation, scoring, and game state management.
 
-// will also update this later as the project tends to progress.
+### Tech Stack
+- Node.js 
+- Express.js
+- MongoDB
+- Socket.io
 
-### 1. Architecture & Considerations
-
-Backend Framework: Node.js with Express.js.
-
-Authentication: Google OAuth 2.0 for user login via Google Sign-In. 
-
-Database: MongoDB .
-
-Caching: Redis . 
-
-Containerization: Docker . 
-
-Deployment: Cloud hosting service (maybe AWS) . 
-
-Rate Limiting: maybe express-rate-limit package or something.
-
-### 2. API Endpoints Required
- - User Authentication
-
-    POST /api/auth/google \
-    Google OAuth login endpoint.
-
-
- - Short URL Creation
-
-    POST /api/shorten \
-    Create a short URL with optional custom alias and topic.
-
-
- - Redirection
-   
-    GET /api/shorten/:alias \
-    Redirects to the original long URL.
-
-- Analytics 
-
-    GET /api/analytics/:alias \
-    Fetch analytics for a specific short URL.
-
-    GET /api/analytics/topic/:topic \
-    Retrieve topic-based analytics.
- 
-    GET /api/analytics/overall \
-    Retrieve overall analytics for all user-created URLs.
-
-
-### 3. Edge Cases
-- Short URL Creation: 
-- Rate limit exceeded for a user.
-- Redirection
-
-### 4. Dependencies
-
-express \
-mongoose \
-dotenv
-
+### Steps to run:-
+- Clone the repo
+- Run commands:-
+ ```
+  npm install
+  npm start
+  npm run socket-start
+```
